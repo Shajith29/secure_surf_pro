@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="Controller">
+    <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="30">
+
+        <Label text="Phishing Detection Agent" style="-fx-font-size: 20;" />
+        <TextField fx:id="ipField" promptText="having_IP_Address (e.g., 1)" />
+        <TextField fx:id="urlLengthField" promptText="URL_Length (e.g., 1)" />
+        <!-- Add more fields as needed... -->
+
+        <Button text="Predict" onAction="#handlePredict"/>
+        <Label fx:id="resultLabel" text="" style="-fx-font-size: 16;" />
+    </VBox>
+</AnchorPane>
